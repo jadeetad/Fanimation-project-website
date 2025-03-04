@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    color: black;
+    font-size: 5 rem;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white; /* Sage */
+    border: 1px solid #9CB698;
+    border-radius: 10px;
+    width: 98%;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding: 1rem 2rem;
+    /* position: sticky; */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 108px;
+  }
+  .logo {
+    font-size: 3rem;
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: rgba(168, 224, 145, 0.3); /* Light Peach Fuzz */
+    border-radius: 15px;
+  }
+  
+  .nav-links a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #7eba7d; /* Underline for active link */
+  }
+
+  .carousel-container {
+    width: 100vh; /* Full width */
+    height: 100vh; /* 1/3 of the screen height */
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    border-radius: 0; /* Removes border-radius for full coverage */
+    background: white;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+    display: flex;
+    gap: 10px;
+    height: 100%; /* Ensures items take full height */
+}
+
+.item {
+    min-width: 900px;
+    height: 100%; /* Fills the container */
+    background-color: #ff6b6b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    border-radius: 10px;
+}
+.caro{
+    display: flex;
+    flex-direction: column;
+}
