@@ -131,7 +131,7 @@ document.querySelectorAll(".filter-item").forEach(button => {
   button.addEventListener("click", () => {
       let gallery = document.querySelector(".gallery");
       let items = Array.from(gallery.children);
-  }
+  },
       document.addEventListener("DOMContentLoaded", function () {
         const galleryTrack = document.querySelector(".gallery-track");
         const filterButtons = document.querySelectorAll(".filter-item");
@@ -171,7 +171,7 @@ document.querySelectorAll(".filter-item").forEach(button => {
         filterButtons.forEach(button => {
             button.addEventListener("click", shuffleGallery);
         });
-    })
+    }),
       function showCartBanner() {
     const banner = document.getElementById("cart-banner");
     banner.style.display = "block";
@@ -183,4 +183,4 @@ document.querySelectorAll(".filter-item").forEach(button => {
             banner.style.display = "none";
         }, 500); // Wait for fade-out
     }, 2000); // Show for 2 seconds
-}
+  })})
