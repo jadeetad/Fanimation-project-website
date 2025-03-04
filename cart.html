@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fanimation Store</title>
+  <link rel="stylesheet" href="cart.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div>
+    <nav class="navbar">
+      <div>
+        <a href="#" class="logo">Fanimation</a>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html" class="active">🏠 Home</a>
+        </li>
+        <li>
+          <a href="cart.html" class="cart">🛒 Cart <span id="cart-count">0</span></a>
+        </li>
+        <li>
+          <a href="contact.html">📞 Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="cartftext" id="cart-message">Looking for items? Add to cart!!</div>
+
+ 
+
+  <div id="cart-popup" class="cart-popup">Item added to cart! 🛒</div>
+  <div class="cart-items"></div>
+
+
+  <script>
+    function addToCart() {
+      let notification = document.getElementById("notification");
+      notification.style.display = "block";
+      setTimeout(() => {
+        notification.style.display = "none";
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
